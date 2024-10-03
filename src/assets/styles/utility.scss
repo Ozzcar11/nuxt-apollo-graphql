@@ -1,0 +1,78 @@
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px 56px;
+  max-width: 1328px;
+
+  @include screen-tablet {
+    max-width: 720px;
+  }
+
+  @include screen-mobile {
+    max-width: 360px;
+    padding: 0 12px 24px;
+  }
+}
+
+.m-6 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.full-page {
+  width: 100%;
+  height: 100vh;
+
+  @include screen-tablet {
+    height: auto;
+  }
+
+  @include screen-mobile {
+    height: auto;
+  }
+
+  @include screen-small-height {
+    min-height: 100vh;
+    height: auto;
+  }
+}
+
+.hidden {
+  opacity: 0;
+
+  @include screen-tablet {
+    opacity: 1;
+  }
+
+  @include screen-mobile {
+    opacity: 1;
+  }
+}

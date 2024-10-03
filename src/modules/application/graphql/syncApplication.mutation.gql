@@ -1,0 +1,5 @@
+mutation ApplicationSync($userApplicationSync: UserApplicationSyncInput) {
+  userApplicationQuestionnairesSync(userApplicationSync: $userApplicationSync) {
+    id
+  }
+}

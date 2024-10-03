@@ -1,0 +1,3 @@
+mutation reset($password_reset: PasswordResetInput) {
+  passwordResetPerform(password_reset: $password_reset)
+}

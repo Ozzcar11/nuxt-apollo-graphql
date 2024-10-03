@@ -1,0 +1,7 @@
+#import "../../users/graphql/user.fragment.gql"
+
+mutation register($inviteRegistration: InviteRegistrationInput) {
+  inviteRegistration(inviteRegistration: $inviteRegistration) {
+    ...User
+  }
+}

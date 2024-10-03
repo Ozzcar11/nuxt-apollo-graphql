@@ -1,0 +1,12 @@
+fragment Result on UserApplicationResult {
+  application_result
+  application_result_max
+  scoring_result
+  scoring_result_max
+  total
+  total_max
+  level_1
+  level_2
+  scoring_date
+  application_date
+}

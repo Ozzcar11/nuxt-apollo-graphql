@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  app:
+    # TODO: replace with $CI_REGISTRY_IMAGE
+    image: registry.gitlab.ozzcar11.ru/ozzcar11/mendeleeva/ozzcar11-raiting/ozzcar11-raiting-frontend-public:${APP_IMAGE_VERSION:-latest}
+    ports:
+      - "127.0.0.1:${APP_PORT:-7001}:${PORT:-3000}"
+    restart: always
+    env_file:
+      - .env
+

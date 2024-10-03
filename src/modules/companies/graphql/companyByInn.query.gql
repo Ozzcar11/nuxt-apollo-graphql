@@ -1,0 +1,7 @@
+#import "./company.fragment.gql"
+
+query CompanyByInn($inn: String!) {
+  company(inn: $inn) {
+    ...Company
+  }
+}

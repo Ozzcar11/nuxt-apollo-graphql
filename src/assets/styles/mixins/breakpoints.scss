@@ -1,0 +1,48 @@
+/**
+ * * Custom mixin for any max width value
+*/
+@mixin screen-custom-max($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+/**
+ * * Custom mixin for any min width value
+*/
+@mixin screen-custom-min($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+
+@mixin screen-mobile {
+  @media (max-width: 719px) {
+    @content;
+  }
+}
+
+
+@mixin screen-tablet {
+  @media (max-width: 1279px) {
+    @content;
+  }
+}
+
+@mixin screen-small-height {
+  @media (max-height: 909px) {
+    @content
+  }
+}
+
+@mixin screen-desktop-xs {
+  @media (max-width: 1440px) {
+    @content
+  }
+}
+
+
+
+
+

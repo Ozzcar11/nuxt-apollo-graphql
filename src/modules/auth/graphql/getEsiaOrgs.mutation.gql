@@ -1,0 +1,7 @@
+mutation GetOrgs($input: GetOrgsEsiaInput) {
+  esiaGetOrgs(input: $input) {
+    orgOid
+    fullName
+    shortName
+  }
+}

@@ -1,0 +1,4 @@
+fragment CompanyCategory on CompanyCategory {
+  id
+  name
+}

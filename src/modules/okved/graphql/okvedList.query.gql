@@ -1,0 +1,13 @@
+#import "./okved.fragment.gql"
+#import "../../index/graphql/meta.fragment.gql"
+
+query OkvedList($page: Int!, $limit: Int!) {
+  list: okveds(page: $page, limit: $limit) {
+    items {
+      ...Okved
+    }
+    meta {
+      ...Meta
+    }
+  }
+}

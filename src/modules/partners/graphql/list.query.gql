@@ -1,0 +1,13 @@
+#import "./partner.fragment.gql"
+#import "../../index/graphql/meta.fragment.gql"
+
+query PartnerList($per_page: Int!, $page: Int, $filter: PartnerOfferFilterInput, $sort: SortInput) {
+  list: partnerOffers(limit: $per_page, page: $page, filter: $filter, sort: $sort) {
+    items {
+      ...Partner
+    }
+    meta {
+      ...Meta
+    }
+  }
+}

@@ -1,0 +1,4 @@
+fragment ProjectDirection on ProjectDirection {
+  id
+  name
+}

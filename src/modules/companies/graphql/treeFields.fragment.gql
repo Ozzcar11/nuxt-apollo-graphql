@@ -1,0 +1,26 @@
+fragment TreeFields on Area {
+  id
+  max_points
+  public_name
+  description
+  area_result {
+    max_points
+    result_points
+  }
+  application_area_questions {
+    text
+    public_text
+    user_application_questionnaires {
+      question {
+        public_text
+      }
+      answer {
+        points
+      }
+      user_question_scoring {
+        points
+        max_points
+      }
+    }
+  }
+}

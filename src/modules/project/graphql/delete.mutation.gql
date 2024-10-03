@@ -1,0 +1,3 @@
+mutation ProjectDelete($userApplicationProjects: [UserApplicationProjectUpdateInput]) {
+  userApplicationsProjectsDelete(userApplicationProjects: $userApplicationProjects)
+}

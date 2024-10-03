@@ -1,0 +1,47 @@
+#import "./companyCategory.fragment.gql"
+
+
+fragment Company on Company {
+  id
+  inn
+  name
+  link
+  trademarks
+  product_information
+  revenue_year
+  average_headcount
+  okved {
+    id
+    name
+  }
+  contact_person {
+    id
+    firstname
+    middlename
+    lastname
+    email
+    phone
+    position
+    add_information
+  }
+  company_category {
+    ...CompanyCategory
+  }
+  average_headcount
+  region_registration {
+    id
+    name
+  }
+  region_presences {
+    id
+    name
+  }
+  revenue_year
+  level_1
+  level_2
+  ecology_points
+  staff_points
+  government_points
+  status
+  result_points
+}

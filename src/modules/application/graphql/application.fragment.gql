@@ -1,0 +1,12 @@
+#import './applicationProject.fragment.gql'
+
+fragment Application on UserApplication {
+  id
+  projects {
+    ...ApplicationProject
+  }
+  account_status
+  is_edited
+  user_application_result
+  created_at
+}

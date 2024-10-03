@@ -1,0 +1,9 @@
+#import "../../users/graphql/user.fragment.gql"
+
+mutation loginInn($input: LoginInput) {
+  login(input: $input) {
+    user {
+      ...User
+    }
+  }
+}

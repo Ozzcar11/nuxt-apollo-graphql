@@ -1,0 +1,4 @@
+@mixin horizontal-scroll {
+  overflow: auto hidden;
+  scrollbar-width: none;
+}

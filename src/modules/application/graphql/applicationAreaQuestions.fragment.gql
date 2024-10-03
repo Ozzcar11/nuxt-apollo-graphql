@@ -1,0 +1,37 @@
+#import "../../file/graphql/file.fragment.gql"
+
+fragment AreaQuestions on ApplicationAreaQuestion {
+  id
+  system_name
+  text
+  question_canned_answers {
+    id
+    points
+    text
+  }
+  user_application_questionnaires {
+    id
+    value
+    company_comment
+    answer {
+      id
+      text
+    }
+    question {
+      id
+      text
+    }
+    documents {
+      title
+      file {
+        ...File
+      }
+    }
+    user_question_scoring {
+      id
+      points
+      expert_comment
+      max_points
+    }
+  }
+}

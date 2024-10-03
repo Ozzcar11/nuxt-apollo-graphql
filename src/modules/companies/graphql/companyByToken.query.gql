@@ -1,0 +1,7 @@
+#import "./company.fragment.gql"
+
+query CompanyByToken($token: String) {
+  companyByToken(token: $token) {
+    ...Company
+  }
+}

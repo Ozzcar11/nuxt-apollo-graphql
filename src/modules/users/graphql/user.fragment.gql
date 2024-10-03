@@ -1,0 +1,13 @@
+#import "./userProfile.fragment.gql"
+#import "../../companies/graphql/company.fragment.gql"
+
+fragment User on User {
+  id
+  email
+  profile {
+    ...UserProfile
+  }
+  company {
+    ...Company
+  }
+}

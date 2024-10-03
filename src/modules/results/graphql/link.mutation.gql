@@ -1,0 +1,3 @@
+mutation ResultLinkGet($company: UpdateCompanyInput) {
+  makeCertificate(company: $company)
+}

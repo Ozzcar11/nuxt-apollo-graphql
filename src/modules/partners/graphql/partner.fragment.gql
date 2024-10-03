@@ -1,0 +1,11 @@
+#import "../../image/graphql/image.fragment.gql"
+
+fragment Partner on PartnerOffer {
+  id
+  link
+  description
+  name
+  image {
+    ...Image
+  }
+}

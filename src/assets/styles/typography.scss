@@ -1,0 +1,155 @@
+@import "./mixins/sizings";
+
+@mixin font-golos {
+  font-family: Golos, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+h1 {
+  @include text-h1;
+  @include font-golos;
+
+  color: var(--text-primary-inverted, #FFF);
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+  margin-bottom: 24px;
+
+  @include screen-tablet {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+    margin-bottom: 16px;
+  }
+
+  @include screen-mobile {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    margin-bottom: 12px;
+  }
+}
+
+h2 {
+  @include text-h2;
+  @include font-golos;
+
+  color: var(--text-primary-inverted, #FFF);
+
+  /* heading/h2-demibold */
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+
+  @include screen-tablet {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px; /* 140% */
+  }
+
+  @include screen-mobile {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+  }
+}
+
+h3 {
+  @include text-h3;
+
+  @include screen-tablet {
+    @include text-h4;
+  }
+}
+
+h4 {
+  @include text-h4;
+}
+
+h5 {
+  @include font-golos;
+
+  color: var(--text-primary, #051945);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+
+  @include screen-mobile {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+  }
+}
+
+h6 {
+  @include font-golos;
+
+  color: var(--text-primary-inverted, #FFF);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+
+@mixin p2-regular {
+  @include font-golos;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@mixin p1-regular {
+  @include font-golos;
+
+  color: var(--text-secondary, #7C879F);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@mixin p2-medium {
+  @include font-golos;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--text-secondary, #7C879F);
+}
+
+@mixin p1-medium {
+  @include font-golos;
+
+  color: var(--text-primary-inverted, #FFF);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.p2-regular {
+  @include p2-regular;
+}
+
+.p1-regular {
+  @include p1-regular;
+}
+
+.p2-medium {
+  @include p2-medium
+}
+
+.p1-medium {
+  @include p1-medium
+}

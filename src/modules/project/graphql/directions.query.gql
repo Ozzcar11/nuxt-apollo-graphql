@@ -1,0 +1,9 @@
+#import "./direction.fragment.gql"
+
+query ProjectList($limit: Int!) {
+  list: projectDirections(limit: $limit) {
+    items {
+      ...ProjectDirection
+    }
+  }
+}

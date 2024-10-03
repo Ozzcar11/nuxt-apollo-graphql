@@ -1,0 +1,16 @@
+@import "./mixins/breakpoints";
+@import "./mixins/sizings";
+@import "./mixins/transitions";
+@import "./mixins/utils";
+
+.hide-scrollbar {
+  &::-webkit-scrollbar {
+    width: 0;
+
+    @include screen-tablet {
+      width: 10px;
+    }
+  }
+}
+
+

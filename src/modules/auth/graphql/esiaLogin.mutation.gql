@@ -1,0 +1,9 @@
+#import '../../users/graphql/user.fragment.gql'
+
+mutation EsiaLogin($input: LoginEsiaInput) {
+  esiaLogin(input: $input) {
+    user {
+      ...User
+    }
+  }
+}

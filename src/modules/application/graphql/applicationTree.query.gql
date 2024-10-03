@@ -1,0 +1,7 @@
+#import "./area.fragment.gql"
+
+query ApplicationTreeGet {
+  applicationAreasTree {
+    ...Area
+  }
+}

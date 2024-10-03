@@ -1,0 +1,14 @@
+#import "./companyCategory.fragment.gql"
+#import "../../index/graphql/meta.fragment.gql"
+
+query CompanyCategoriesList($page: Int!, $limit: Int!) {
+  list: companyCategories(page: $page, limit: $limit) {
+    items {
+      ...CompanyCategory
+    }
+    meta {
+      ...Meta
+    }
+  }
+}
+

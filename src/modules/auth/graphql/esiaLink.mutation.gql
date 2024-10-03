@@ -1,0 +1,3 @@
+mutation EsiaLink($input: LoginEsiaInput) {
+  esiaGetAuthLinkByOrgOid(input: $input)
+}
